@@ -1,0 +1,15 @@
+
+<div id="navbar_bookmarkmanager" class="nav navbar-text">
+
+
+    <div class="nav navbar-text">
+      <a class="dropdown-toggle" data-toggle="dropdown" style="text-decoration: none;display:block;padding-top:4px;" href="#"><i class="icon-2x icon-book"></i></a>
+      <ul class="dropdown-menu" data-bind="foreach: pluginSettings.allBookmarks">
+          <li><a target="_newTab" data-bind="attr: {
+                                                     href: url,
+                                                     title: url },
+                                            attrIf: {
+                                                      target: '_newTab', _if: showInNewTab}" ><span data-bind="text: name"></span></a></li>
+      </ul>
+    </div>
+</div>
